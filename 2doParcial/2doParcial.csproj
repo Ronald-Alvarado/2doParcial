@@ -9,6 +9,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Buscar.png" />
+    <None Remove="Eliminar.png" />
+    <None Remove="Guardar.png" />
+    <None Remove="Nuevo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.2">
       <PrivateAssets>all</PrivateAssets>
@@ -21,6 +28,13 @@
     <Folder Include="Entidades\" />
     <Folder Include="BLL\" />
     <Folder Include="UI\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Buscar.png" />
+    <Resource Include="Eliminar.png" />
+    <Resource Include="Guardar.png" />
+    <Resource Include="Nuevo.png" />
   </ItemGroup>
 
   <ItemGroup>
