@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Agregar.png" />
     <None Remove="Buscar.png" />
     <None Remove="Eliminar.png" />
     <None Remove="Guardar.png" />
@@ -24,13 +25,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="DAL\" />
-    <Folder Include="Entidades\" />
-    <Folder Include="BLL\" />
     <Folder Include="UI\" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Agregar.png" />
     <Resource Include="Buscar.png" />
     <Resource Include="Eliminar.png" />
     <Resource Include="Guardar.png" />
