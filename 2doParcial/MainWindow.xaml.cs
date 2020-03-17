@@ -38,20 +38,6 @@ namespace _2doParcial
             Actualizar();
         }
 
-     /*   private bool ValidarDetalle()
-        {
-            bool paso = true;
-
-            if(llamadas.LlamadasDetalle == null)
-            {
-                Problema_Text.Focus();
-                MessageBox.Show("Debe agregar un Problema y Solucion");
-                paso = false;
-            }
-
-            return paso;
-        }*/
-
         private bool ExisteBase()
         {
             Llamadas llamadas = LlamadasBLL.Buscar(Convert.ToInt32(LLamadaId_Text.Text));
@@ -89,11 +75,6 @@ namespace _2doParcial
         {
             bool paso = false;
 
-       /*     if (!ValidarDetalle())
-            {
-                return;
-            }
-            */
             if(LLamadaId_Text.Text == "0")
             {
                 paso = LlamadasBLL.Guardar(llamadas);
@@ -142,6 +123,15 @@ namespace _2doParcial
             Solucion_Text.Clear();
 
             Problema_Text.Focus();
+        }
+
+        private void RemoverButton_Click(object sender, RoutedEventArgs e)
+        {
+            if(TelefonosDataGrid.Items.Count < 1 && TelefonosDataGrid.SelectedIndex > TelefonosDataGrid.Items.Count - 1)
+            {
+                llamadas.LlamadasDetalle.RemoveAt(TelefonosDataGrid.SelectedIndex);
+                Actualizar();
+            }
         }
     }
 }

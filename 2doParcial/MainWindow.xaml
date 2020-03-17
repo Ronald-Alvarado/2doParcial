@@ -22,6 +22,7 @@
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
 
@@ -112,12 +113,16 @@
                         <Binding.ValidationRules>
                             <ExceptionValidationRule/>
                         </Binding.ValidationRules>
-                    </Binding>                    
+                    </Binding>
                 </DataGrid.ItemsSource>
             </DataGrid>
         </StackPanel>
 
         <StackPanel Orientation="Horizontal" Grid.Row="5" Grid.Column="0">
+            <Button x:Name="RemoverButton" Content="Remover" Height="26" Width="100" Click="RemoverButton_Click"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="6" Grid.Column="0">
             <Button x:Name="NuevoButton" Content="Nuevo" Height="26" Width="100" Click="NuevoButton_Click">
                 <Button.Background>
                     <ImageBrush Stretch="Uniform" AlignmentX="Left" ImageSource="Nuevo.png"/>
@@ -125,7 +130,7 @@
             </Button>
         </StackPanel>
 
-        <StackPanel Orientation="Horizontal" Grid.Row="5" Grid.Column="1">
+        <StackPanel Orientation="Horizontal" Grid.Row="6" Grid.Column="1">
             <Button x:Name="GuardarButton" Content="Guardar" Height="26" Width="100" Click="GuardarButton_Click">
                 <Button.Background>
                     <ImageBrush Stretch="Uniform" AlignmentX="Left" ImageSource="Guardar.png"/>
@@ -133,7 +138,7 @@
             </Button>
         </StackPanel>
 
-        <StackPanel Orientation="Horizontal" Grid.Row="5" Grid.Column="2">
+        <StackPanel Orientation="Horizontal" Grid.Row="6" Grid.Column="2">
             <Button x:Name="EliminarButton" Content="Eliminar" Height="26" Width="100" Click="EliminarButton_Click">
                 <Button.Background>
                     <ImageBrush Stretch="Uniform" AlignmentX="Left" ImageSource="Eliminar.png"/>

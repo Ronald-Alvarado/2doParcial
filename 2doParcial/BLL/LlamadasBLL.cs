@@ -47,7 +47,7 @@ namespace _2doParcial.BLL
 
                 foreach(var item in llamadas.LlamadasDetalle)
                 {
-                    db.Entry(llamadas).State = EntityState.Added;
+                    db.Entry(item).State = EntityState.Added;
                 }
                 db.Entry(llamadas).State = EntityState.Modified;
                 paso = (db.SaveChanges() > 0);
